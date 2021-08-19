@@ -1,5 +1,5 @@
 {
-  "name": "media-query-js",
+  "name": "@iamkhan21/media-query-js",
   "version": "0.0.0-development",
   "description": "Use like css media queries in code instead ResizeObserver",
   "keywords": [],
