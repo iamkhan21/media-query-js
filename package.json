@@ -1,0 +1,65 @@
+{
+  "name": "media-query-js",
+  "version": "0.0.0-development",
+  "description": "Use like css media queries in code instead ResizeObserver",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamkhan21/media-query-js.git"
+  },
+  "license": "MIT",
+  "author": "Ivan Khanevich <mail@iamkhan.tech>",
+  "main": "dist/main/index.js",
+  "module": "dist/module/index.js",
+  "typings": "dist/typings/index.d.ts",
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "prettier --check src/*.* && eslint src/*.*",
+    "build": "npm-run-all lint clean -p build:*",
+    "build:main": "swc src -d dist/main --config-file swc_configs/main/.swcrc",
+    "build:module": "swc src -d dist/module --config-file swc_configs/module/.swcrc",
+    "build:typings": "tsc --emitDeclarationOnly --outDir dist/typings",
+    "format": "run-s format:*",
+    "format:prettier": "prettier src/**/*.ts --write",
+    "format:lint": "eslint src --ext .ts --fix",
+    "prepare": "npm run build",
+    "semantic-release": "semantic-release",
+    "test": "npm run lint && jest --coverage",
+    "update:deps": "npx npm-check-updates -i && npm i"
+  },
+  "devDependencies": {
+    "@swc/cli": "0.1.49",
+    "@swc/core": "1.2.79",
+    "@types/jest": "27.0.1",
+    "@typescript-eslint/eslint-plugin": "4.29.2",
+    "@typescript-eslint/parser": "4.29.2",
+    "eslint": "7.32.0",
+    "jest": "27.0.6",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.3.2",
+    "prettier-plugin-packagejson": "2.2.11",
+    "rimraf": "3.0.2",
+    "semantic-release": "^17.4.5",
+    "semantic-release-cli": "5.4.3",
+    "ts-jest": "27.0.5",
+    "ts-node": "10.2.1",
+    "typescript": "4.3.5"
+  },
+  "renovate": {
+    "extends": [
+      "config:js-lib",
+      ":automergePatch",
+      ":automergeBranch",
+      ":automergePatch",
+      ":automergeBranch",
+      ":automergeLinters",
+      ":automergeTesters",
+      ":automergeTypes"
+    ]
+  }
+}
