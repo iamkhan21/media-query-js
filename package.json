@@ -33,7 +33,7 @@
     "update:deps": "npx npm-check-updates -i && npm i"
   },
   "devDependencies": {
-    "@swc/cli": "0.1.50",
+    "@swc/cli": "0.1.51",
     "@swc/core": "1.2.91",
     "@types/jest": "27.0.2",
     "@typescript-eslint/eslint-plugin": "4.32.0",
