@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@swc/cli": "0.1.52",
-    "@swc/core": "1.2.113",
+    "@swc/core": "1.2.117",
     "@types/jest": "27.0.3",
     "@typescript-eslint/eslint-plugin": "5.5.0",
     "@typescript-eslint/parser": "5.5.0",
