@@ -40,7 +40,7 @@ export class MediaQuery {
 
   private static isWindowExist() {
     if (typeof window === "undefined") {
-      throw new Error(`This library can be executed only on client side.`);
+      throw new Error("This library can be executed only on client side.");
     }
   }
 
