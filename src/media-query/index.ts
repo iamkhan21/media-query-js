@@ -23,8 +23,6 @@ export class MediaQuery {
     MediaQuery.isWindowExist();
     this.mediaQueryList = window.matchMedia(query);
     this.callback = callback;
-
-    this.callback(this.mediaQueryList.matches);
   }
 
   get media(): string {
@@ -47,13 +45,23 @@ export class MediaQuery {
   }
 
   public on(): void {
-    // This method has been kept for backward compatibility
-    this.mediaQueryList.addListener(this.onChange);
+    if (this.mediaQueryList.addEventListener) {
+      this.mediaQueryList.addEventListener("change", this.onChange);
+    } else {
+      // This method has been kept for backward compatibility
+      this.mediaQueryList.addListener(this.onChange);
+    }
+
+    this.callback(this.mediaQueryList.matches);
   }
 
   public off(): void {
-    // This method has been kept for backward compatibility
-    this.mediaQueryList.removeListener(this.onChange);
+    if (this.mediaQueryList.removeEventListener) {
+      this.mediaQueryList.removeEventListener("change", this.onChange);
+    } else {
+      // This method has been kept for backward compatibility
+      this.mediaQueryList.removeListener(this.onChange);
+    }
   }
 
   private onChange = ({ matches }: ChangeEvent): void => {
