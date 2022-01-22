@@ -23,6 +23,8 @@ export class MediaQuery {
     MediaQuery.isWindowExist();
     this.mediaQueryList = window.matchMedia(query);
     this.callback = callback;
+
+    this.callback(this.mediaQueryList.matches);
   }
 
   get media(): string {
