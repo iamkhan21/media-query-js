@@ -21,7 +21,11 @@ describe("MediaQuery", function () {
 
     const query = "(max-width: 600px)";
 
-    const mediaQuery = new MediaQuery(query, () => {});
+    const fn = spy();
+    const mediaQuery = new MediaQuery(query, fn);
+
+    assert.equal(fn.callCount, 1);
+    assert.deepEqual(fn.calls, [[mediaQuery.matches]]);
 
     assert.equal(mediaQuery.media, query);
     assert.isNotOk(mediaQuery.matches);

@@ -23,6 +23,8 @@ export class MediaQuery {
     MediaQuery.isWindowExist();
     this.mediaQueryList = window.matchMedia(query);
     this.callback = callback;
+
+    this.callback(this.mediaQueryList.matches);
   }
 
   get media(): string {
@@ -51,8 +53,6 @@ export class MediaQuery {
       // This method has been kept for backward compatibility
       this.mediaQueryList.addListener(this.onChange);
     }
-
-    this.callback(this.mediaQueryList.matches);
   }
 
   public off(): void {
