@@ -1,1 +1,1 @@
-export const foo = 'foo'
+export { MediaQuery } from "./media-query";
