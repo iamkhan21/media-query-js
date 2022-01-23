@@ -1,7 +1,14 @@
 {
   "name": "@iamkhan21/media-query-js",
   "version": "0.0.0",
-  "description": "Use like css media queries in code instead ResizeObserver",
+  "description": "Use same mechanics like CSS media queries in JavaScript instead ResizeObserver",
+  "author": {
+    "email": "mail@iamkhan.tech",
+    "name": "Ivan Khanevich"
+  },
+  "keywords": [
+    "mediaquery"
+  ],
   "files": [
     "dist"
   ],
