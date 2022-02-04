@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   jsdom: 19.0.0
-  nanospy: 0.4.0
+  nanospy: 0.5.0
   prettier: 2.5.1
   tsup: 5.11.13
   typescript: 4.5.5
@@ -11,7 +11,7 @@ specifiers:
 
 devDependencies:
   jsdom: 19.0.0
-  nanospy: 0.4.0
+  nanospy: 0.5.0
   prettier: 2.5.1
   tsup: 5.11.13_typescript@4.5.5
   typescript: 4.5.5
@@ -996,8 +996,8 @@ packages:
     hasBin: true
     dev: true
 
-  /nanospy/0.4.0:
-    resolution: {integrity: sha512-PUdss1inwE0/ti+X9FKuEBLLWQusaHnLBuwYn0cjJNM446DafMS3tbTWV9C9T/NEnD+BPL0zHdnNF/FWvHelvw==}
+  /nanospy/0.5.0:
+    resolution: {integrity: sha512-QxH93ntkjRiSP+gJrBLcgOO3neU6pGhUKjPAJ7rAFag/+tJ+/0lw6dXic+iXUQ/3Cxk4Dp/FwLnf57xnQsjecQ==}
     engines: {node: ^8.0.0 || ^10.0.0 || ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
