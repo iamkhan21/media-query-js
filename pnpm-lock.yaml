@@ -5,7 +5,7 @@ specifiers:
   nanospy: 0.5.0
   prettier: 2.5.1
   tsup: 5.11.13
-  typescript: 4.5.5
+  typescript: 4.7.4
   vite: 2.8.0
   vitest: 0.3.0
 
@@ -13,8 +13,8 @@ devDependencies:
   jsdom: 19.0.0
   nanospy: 0.5.0
   prettier: 2.5.1
-  tsup: 5.11.13_typescript@4.5.5
-  typescript: 4.5.5
+  tsup: 5.11.13_typescript@4.7.4
+  typescript: 4.7.4
   vite: 2.8.0
   vitest: 0.3.0_jsdom@19.0.0
 
@@ -1351,7 +1351,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /tsup/5.11.13_typescript@4.5.5:
+  /tsup/5.11.13_typescript@4.7.4:
     resolution: {integrity: sha512-NVMK01gVmojZn7+iZwxRK1CzW2BIabaVMyEjs7Nm9lm4DrSf7IAqs2F3fg0vT7rH72x1cIBsW9U/TlWrCvHVQQ==}
     hasBin: true
     peerDependencies:
@@ -1374,7 +1374,7 @@ packages:
       source-map: 0.7.3
       sucrase: 3.20.3
       tree-kill: 1.2.2
-      typescript: 4.5.5
+      typescript: 4.7.4
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1392,8 +1392,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /typescript/4.5.5:
-    resolution: {integrity: sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==}
+  /typescript/4.7.4:
+    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
