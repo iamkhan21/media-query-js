@@ -70,7 +70,7 @@ jobs:
             ${{ runner.os }}-
       - run: npm i -g pnpm
       - run: pnpm i
-      - run: pnpx -y semantic-release --branches master
+      - run: pnpm dlx semantic-release --branches master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
