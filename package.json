@@ -34,7 +34,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "jsdom": "20.0.0",
+    "jsdom": "20.0.3",
     "nanospy": "0.5.0",
     "prettier": "2.7.1",
     "tsup": "6.2.0",
